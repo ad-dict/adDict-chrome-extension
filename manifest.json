@@ -4,7 +4,7 @@
   "description": "A self-build dictionary!",
 	"permissions": ["activeTab", "declarativeContent"], 
   "background": {
-    "scripts": ["background.js"],
+    "page": "background.html",
     "persistent": false
   },
   "page_action": {
@@ -22,6 +22,7 @@
     "48": "images/get_started48.png",
     "128": "images/get_started128.png"
   },
+ "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://apis.google.com; object-src 'self'",
   "commands": {
     "save" : {
         "suggested_key": {

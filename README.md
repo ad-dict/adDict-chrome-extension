@@ -5,6 +5,10 @@
 * On rigth upper activate developer mode
 * On left upper click "Load unpacked"
 * Select directory of extension
-* On any page, select your word and press "Alt+S" to open saving page (Nothing functional for now. Submit button just shows the JSON object.)
+* On any page, select your word and press "Alt+S" to open saving page (Fill configuration in firebase.js)
 
-For a video that shows a demo of the extension click [here](https://youtu.be/WrFZOxqC1Go)
+For videos that shows different demos of the extension 
+
+* [Demo 3](https://youtu.be/EnUSqJSUUn0)
+* [Demo 2](https://youtu.be/qLtap-GhR8M)
+* [Demo 1](https://youtu.be/WrFZOxqC1Go)

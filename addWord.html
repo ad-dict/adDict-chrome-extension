@@ -5,14 +5,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<script src="addWord.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+
 	<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
 	<style>
 		body {
 			margin-top: 30px;
 		}
 	</style>
-
+	<script src="firebase.js"></script>
 </head>
 
 <body class="container">
@@ -27,21 +32,21 @@
 				</label>
 				<input type="text" class="form-control" id="word" />
 
-				<br/>
+				<br />
 
 				<label for="meaning">
 					Meaning
 				</label>
 				<input type="text" class="form-control" id="meaning" />
 
-				<br/>
+				<br />
 
 				<label for="exampleSentence">
 					Example Sentence
 				</label>
 				<input type="text" class="form-control" id="exampleSentence" />
-				
-				<br/>
+
+				<br />
 
 				<button class="btn btn-primary" id="submit">
 					Submit
@@ -50,6 +55,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="addWord.js"></script>
 </body>
 
 </html>
