@@ -29,6 +29,7 @@ function signOut () {
 function waitForElement(){
     if(currentUser){
         console.log(currentUser)
+        document.getElementById('signIn').disabled = true
         document.getElementById('signOut').disabled = false
     }
     else{
@@ -43,8 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
         chrome.tabs.create({url: chrome.extension.getURL('showWords.html')});
     })
 
-
-    document.getElementById('signIn').disabled = true
     document.getElementById('signOut').disabled = true
     waitForElement()
 
