@@ -3,7 +3,7 @@ window.onload = function () {
   const word = params.get("word")
   document.getElementById("word").value = word;
 
-  db = fbApp.firestore()
+
   waitForElement()
 
 }

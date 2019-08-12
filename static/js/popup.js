@@ -39,6 +39,11 @@ function waitForElement(){
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('signIn').addEventListener('click', signIn);
     document.getElementById('signOut').addEventListener('click', signOut)
+    document.getElementById('showWords').addEventListener('click', function(){
+        chrome.tabs.create({url: chrome.extension.getURL('showWords.html')});
+    })
+
+
     document.getElementById('signIn').disabled = true
     document.getElementById('signOut').disabled = true
     waitForElement()
